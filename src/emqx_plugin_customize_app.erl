@@ -26,12 +26,10 @@
 
 start(_StartType, _StartArgs) ->
     {ok, Sup} = emqx_plugin_customize_sup:start_link(),
-    ok = emqx_access_control:register_mod(auth, emqx_auth_demo, []),
     emqx_plugin_customize:load(application:get_all_env()),
     {ok, Sup}.
 
 
 stop(_State) ->
-    ok = emqx_access_control:unregister_mod(auth, emqx_auth_demo),
     emqx_plugin_customize:unload().
 
