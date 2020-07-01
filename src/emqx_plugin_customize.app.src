@@ -1,5 +1,5 @@
 {application, emqx_plugin_customize,
- [{description, "EMQ X Plugin Customize},
+ [{description, "EMQ X Plugin Customize"},
   {vsn, "git"},
   {modules, []},
   {registered, [emqx_plugin_customize_sup]},
@@ -9,4 +9,6 @@
   {licenses, ["Apache-2.0"]},
   {maintainers, ["EMQ X Team <contact@emqx.io>"]},
   {links, [{"Homepage", "https://emqx.io/"},
-           {"Github", "https://github.com/wliverpool/emqx-plugin-test"}]}]}.
+           {"Github", "https://github.com/emqx/emqx-plugin-customize"}
+          ]}
+ ]}.
