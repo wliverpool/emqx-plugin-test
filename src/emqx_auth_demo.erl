@@ -16,10 +16,6 @@
 
 -module(emqx_auth_demo).
 
--behaviour(application).
-
--emqx_plugin(?MODULE).
-
 -export([ init/1
         , check/2
 	, description/0
