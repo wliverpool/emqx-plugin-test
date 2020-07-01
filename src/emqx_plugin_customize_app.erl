@@ -32,6 +32,6 @@ start(_StartType, _StartArgs) ->
 
 
 stop(_State) ->
-    ok = emqx:hook('client.check_acl', fun emqx_acl_demo:check_acl/5, []).
+    ok = emqx:hook('client.check_acl', fun emqx_acl_demo:check_acl/2, []).
     %%emqx_plugin_customize:unload().
 
